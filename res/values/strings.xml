@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, GroceryList!</string>
-    <string name="app_name">Grocery List</string>
+    <string name="app_name">ShoppinCart - Current List</string>
     <string name="add">Add</string>
     
     <string-array name="items_array">
