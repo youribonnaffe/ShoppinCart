@@ -27,6 +27,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:transcriptMode="alwaysScroll"
-		android:layout_weight="1">
+		android:layout_weight="1"
+		android:focusable="false"
+		android:choiceMode="multipleChoice">
 	</ListView>
 </LinearLayout>
