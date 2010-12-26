@@ -27,11 +27,9 @@ public class ShoppinCartActivity extends Activity {
 
 		ListView itemsListView = (ListView) findViewById(R.id.list_items);
 		itemsListView.setOnItemClickListener(new OnItemClickListener() {
-			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				strikeThroughListItem(view);
 			}
-
 		});
 
 		final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_items,
@@ -40,7 +38,6 @@ public class ShoppinCartActivity extends Activity {
 
 		Button addButton = (Button) findViewById(R.id.add_item);
 		addButton.setOnClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				addNewItemToList(newItemTextView, arrayAdapter);
 			}
@@ -49,8 +46,10 @@ public class ShoppinCartActivity extends Activity {
 
 	private void addNewItemToList(final AutoCompleteTextView newItemTextView, final ArrayAdapter<String> arrayAdapter) {
 		String item = newItemTextView.getText().toString();
-		arrayAdapter.add(item);
-		newItemTextView.setText("");
+		if( item.length() != 0){
+			arrayAdapter.add(item);
+			newItemTextView.setText("");
+		}
 	}
 
 	private void strikeThroughListItem(View view) {

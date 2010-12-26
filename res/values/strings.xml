@@ -12,4 +12,5 @@
         <item>Corn</item>
         <item>Mushroom</item>
     </string-array>
+<string name="items_list">Items:</string>
 </resources>
