@@ -30,7 +30,7 @@
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content">
 	</TextView>
-	<ListView
+	<ExpandableListView
 		android:id="@+id/list_items"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -38,6 +38,6 @@
 		android:layout_weight="1"
 		android:focusable="false"
 		android:choiceMode="multipleChoice">
-	</ListView>
+	</ExpandableListView>
 
 </LinearLayout>
